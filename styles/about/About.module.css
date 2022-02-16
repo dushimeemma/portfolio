@@ -1,0 +1,25 @@
+.container {
+  @apply bg-white flex flex-col min-h-screen w-screen justify-start items-center;
+}
+
+.skillsContainer {
+  @apply select-none flex flex-row justify-between items-center flex-wrap mt-[8rem] mb-10 mx-auto w-full md:w-[80%];
+}
+.skillContainer {
+  @apply cursor-pointer w-full md:w-[12.5rem] h-[15.593rem] flex flex-col justify-center items-center p-5;
+}
+.skillTitle {
+  @apply w-[8.5rem] font-medium text-[1.5rem] text-center;
+}
+
+.about {
+  @apply w-[80%] mx-auto mt-10 mb-10 flex flex-col justify-around items-center;
+}
+
+.aboutTitle {
+  @apply p-5 my-5 text-primary text-[1.5rem] font-bold border-b-2 border-primary;
+}
+
+.aboutContent {
+  @apply text-[1.5rem] my-5 font-normal text-center;
+}
