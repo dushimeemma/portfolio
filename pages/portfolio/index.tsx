@@ -12,13 +12,14 @@ const Portfolio: NextPage = () => {
       <span className={styles.title}>Projects</span>
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
-          <Image
-            src={project.imageUrl}
-            width={280}
-            height={550}
-            key={index + 1}
-            className='cursor-pointer'
-          />
+          <div key={index + 1} className='my-5'>
+            <Image
+              src={project.imageUrl}
+              width={280}
+              height={550}
+              className='cursor-pointer'
+            />
+          </div>
         ))}
       </div>
     </div>
