@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Emmanuel Dushime | Portfolio
 
-## Getting Started
+This web application shows visitors all the information they may need about `Emmanuel Dushime` as a `software developer` and what I offer to you.
 
-First, run the development server:
+## Features
+
+- Contact Me Form
+
+## Screenshots
+
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.25.48.png?alt=media&token=5adf6329-d5bf-4173-a94c-7c5a89c69dc9)
+
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.05.png?alt=media&token=db99ea01-08a0-454f-94f8-92bd4b49f4d6)
+
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.22.png?alt=media&token=0086f639-c612-474f-a74e-7ec5f8e532e4)
+
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.42.png?alt=media&token=9829c168-9a69-4614-8aa1-a82e635d79ef)
+
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.54.png?alt=media&token=14fe909b-2af1-44f1-be14-f7be6201a688)
+
+## Tech Stack
+
+**Client:** NextJs
+
+## Installation
+
+Install portfolio using yarn
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone
+  cd portfolio
+  yarn install
+  yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running Tests
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To run tests, run the following command
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+  yarn test
+  yarn test:coverage
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Authors
 
-## Learn More
+- [@Emmauel Dushime](hhttps://github.com/dushimeemma)
 
-To learn more about Next.js, take a look at the following resources:
+## Support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For support, email dushimeemma@gmail.com or join my Slack channel.
