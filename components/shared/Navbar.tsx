@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
 
 import styles from '../../styles/components/shared/Navbar.module.css';
 
@@ -33,6 +34,36 @@ const variantsListItems = {
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState<boolean>(true);
+  const [scrollDir, setScrollDir] = useState<string>('');
+
+  useEffect(() => {
+    const threshold = 0;
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
+
+    const updateScrollDir = () => {
+      const scrollY = window.pageYOffset;
+
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
+        ticking = false;
+        return;
+      }
+      setScrollDir(scrollY > lastScrollY ? 'scrolling down' : 'scrolling up');
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [scrollDir]);
   return (
     <>
       <div className={styles.container}>
@@ -58,33 +89,66 @@ const Navbar = () => {
               <motion.ul variants={variants}>
                 <motion.li variants={variantsListItems}>
                   <li className={styles.listItem}>
-                    <a href='#' className={styles.link}>
+                    <ScrollLink
+                      className={styles.link}
+                      smooth
+                      activeClass={styles.currentNavLink}
+                      to='home'
+                      hashSpy
+                      spy
+                      offset={-80}
+                      duration={1000}
+                    >
                       Home
-                    </a>
+                    </ScrollLink>
                   </li>
                 </motion.li>
                 <motion.li variants={variantsListItems}>
                   <li className={styles.listItem}>
-                    <a
-                      href='#'
-                      className={`border-b-2 border-secondary md:border-primary ${styles.link}`}
+                    <ScrollLink
+                      className={styles.link}
+                      smooth
+                      activeClass={styles.currentNavLink}
+                      to='about'
+                      hashSpy
+                      spy
+                      offset={-80}
+                      duration={1000}
                     >
                       About
-                    </a>
+                    </ScrollLink>
                   </li>
                 </motion.li>
                 <motion.li variants={variantsListItems}>
                   <li className={styles.listItem}>
-                    <a href='#' className={styles.link}>
+                    <ScrollLink
+                      className={styles.link}
+                      smooth
+                      activeClass={styles.currentNavLink}
+                      to='portfolio'
+                      hashSpy
+                      spy
+                      offset={-80}
+                      duration={1000}
+                    >
                       Portfolio
-                    </a>
+                    </ScrollLink>
                   </li>
                 </motion.li>
                 <motion.li variants={variantsListItems}>
                   <li className={styles.listItem}>
-                    <a href='#' className={styles.link}>
+                    <ScrollLink
+                      className={styles.link}
+                      smooth
+                      activeClass={styles.currentNavLink}
+                      to='contact'
+                      hashSpy
+                      spy
+                      offset={-80}
+                      duration={1000}
+                    >
                       Contact
-                    </a>
+                    </ScrollLink>
                   </li>
                 </motion.li>
               </motion.ul>
@@ -92,25 +156,64 @@ const Navbar = () => {
           </div>
         )}
         <ul className={styles.list}>
-          <li>
-            <a href='#' className={styles.link}>
+          <li className={styles.listItem}>
+            <ScrollLink
+              className={styles.link}
+              smooth
+              activeClass={styles.currentNavLink}
+              to='home'
+              hashSpy
+              spy
+              offset={-80}
+              duration={1000}
+            >
               Home
-            </a>
+            </ScrollLink>
           </li>
-          <li>
-            <a href='#' className={`border-b-2 border-primary ${styles.link}`}>
+
+          <li className={styles.listItem}>
+            <ScrollLink
+              className={styles.link}
+              smooth
+              activeClass={styles.currentNavLink}
+              to='about'
+              hashSpy
+              spy
+              offset={-80}
+              duration={1000}
+            >
               About
-            </a>
+            </ScrollLink>
           </li>
-          <li>
-            <a href='#' className={styles.link}>
+
+          <li className={styles.listItem}>
+            <ScrollLink
+              className={styles.link}
+              smooth
+              activeClass={styles.currentNavLink}
+              to='portfolio'
+              hashSpy
+              spy
+              offset={-80}
+              duration={1000}
+            >
               Portfolio
-            </a>
+            </ScrollLink>
           </li>
-          <li>
-            <a href='#' className={styles.link}>
+
+          <li className={styles.listItem}>
+            <ScrollLink
+              className={styles.link}
+              smooth
+              activeClass={styles.currentNavLink}
+              to='contact'
+              hashSpy
+              spy
+              offset={-80}
+              duration={1000}
+            >
               Contact
-            </a>
+            </ScrollLink>
           </li>
         </ul>
       </div>

@@ -8,7 +8,7 @@ import { projects } from '../../stub/projects';
 
 const Portfolio: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='portfolio'>
       <span className={styles.title}>Projects</span>
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (

@@ -8,7 +8,7 @@ import { skills } from '../../stub/skills';
 
 const About: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='about'>
       <div className={styles.skillsContainer}>
         {skills.map((skill, index) => (
           <div className={styles.skillContainer} key={index + 1}>

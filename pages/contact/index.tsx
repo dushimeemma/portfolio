@@ -77,7 +77,7 @@ const Contact: NextPage = () => {
     resetForm();
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact'>
       <div className={styles.contactWrapper}>
         {response.has_response && (
           <Alert

@@ -23,5 +23,9 @@
 }
 
 .link {
-  @apply py-5 text-white md:text-primary font-bold;
+  @apply cursor-pointer text-white md:text-primary font-bold;
+}
+
+.currentNavLink {
+  @apply py-5  border-b-2 border-secondary md:border-primary text-white md:text-primary;
 }

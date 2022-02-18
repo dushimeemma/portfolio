@@ -5,7 +5,7 @@ import styles from '../../styles/home/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='home'>
       <div className={styles.leftWrapper}>
         <span className={styles.leftWrapperTitle}>
           Hi, I’m Emmanuel Dushime
