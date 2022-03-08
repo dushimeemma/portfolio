@@ -1,0 +1,6 @@
+.container {
+  @apply fixed border-0 rounded-md bottom-24 right-40;
+}
+.imageButton {
+  @apply rounded-md shadow-md;
+}

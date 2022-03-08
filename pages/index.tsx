@@ -7,6 +7,7 @@ import About from './about';
 import Contact from './contact';
 import Home from './home';
 import Portfolio from './portfolio';
+import Button from '../components/shared/Button';
 
 const LandingPage: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const LandingPage: NextPage = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <Button />
     </>
   );
 };
