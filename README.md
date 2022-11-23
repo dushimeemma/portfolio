@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Emmanuel Dushime | Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application shows visitors all the information they may need about `Emmanuel Dushime` as a `software developer` and what I offer to you.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Contact Me Form
 
-### `yarn start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.25.48.png?alt=media&token=5adf6329-d5bf-4173-a94c-7c5a89c69dc9)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.05.png?alt=media&token=db99ea01-08a0-454f-94f8-92bd4b49f4d6)
 
-### `yarn test`
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.22.png?alt=media&token=0086f639-c612-474f-a74e-7ec5f8e532e4)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.42.png?alt=media&token=9829c168-9a69-4614-8aa1-a82e635d79ef)
 
-### `yarn build`
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/kigc-blog-atlp.appspot.com/o/portfolio%2FScreen%20Shot%202022-02-18%20at%2009.26.54.png?alt=media&token=14fe909b-2af1-44f1-be14-f7be6201a688)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Client:** NextJs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `yarn eject`
+Install portfolio using yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+  git clone
+  cd portfolio
+  yarn install
+  yarn dev
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running Tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run tests, run the following command
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  yarn test
+  yarn test:coverage
+```
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [@Emmauel Dushime](hhttps://github.com/dushimeemma)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Support
+
+For support, email dushimeemma@gmail.com or join my Slack channel.
