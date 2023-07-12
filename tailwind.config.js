@@ -1,26 +1,17 @@
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
-  // darkMode: false,
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-      },
       colors: {
-        primary: '#393939',
-        secondary: '#C4C4C4',
-        inputs: '#1A1A1A',
-      },
-      backgroundImage: {
-        profile: "url('/images/profile.svg')",
+        primary: '#709DCB',
+        danger: '#EA4957',
+        success: '#58E50C',
+        info: '#EEDF3E',
       },
     },
-  },
-  variants: {
-    extend: {},
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+    },
   },
   plugins: [],
 };
