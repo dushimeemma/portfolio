@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import Me from '../assets/darkMe.svg';
 import LightMe from '../assets/lightMe.png';
-import LinkedIn from '../assets/linkedin.svg';
-import Gmail from '../assets/gmail.svg';
-import Whatsapp from '../assets/whatsapp.svg';
-import Instagram from '../assets/instagram.svg';
-import SocialIcon from '../components/SocialIcon';
-import Resume from '../assets/resume.svg';
-import GitHub from '../assets/github.svg';
+// import LinkedIn from '../assets/linkedin.svg';
+// import Gmail from '../assets/gmail.svg';
+// import Whatsapp from '../assets/whatsapp.svg';
+// import Instagram from '../assets/instagram.svg';
+import SocialIcons from '../components/SocialIcon';
+import { SocialIcon } from 'react-social-icons';
+// import Resume from '../assets/resume.svg';
+// import GitHub from '../assets/github.svg';
 import HouseInRwanda from '../assets/houseinrwanda.png';
 import Eshuri from '../assets/eshuri.png';
 import ActionButton from '../components/ActionButton';
@@ -85,24 +86,26 @@ const Home = () => {
           <span className='font-bold my-3'>Reach out to me</span>
           <div className='flex'>
             <SocialIcon
-              icon={Gmail}
-              classes='mr-3'
+              network='email'
               onClick={() => handleOpenMessageLinks(EMAIL_ME)}
+              className='mr-3 cursor-pointer'
             />
+            <div />
             <SocialIcon
-              icon={Whatsapp}
-              classes='mx-3'
+              network='whatsapp'
               onClick={() => handleOpenMessageLinks(WHATSAPP_ME)}
+              className='mx-3 cursor-pointer'
             />
+
             <SocialIcon
-              icon={Instagram}
-              classes='mx-3'
+              network='instagram'
               onClick={() => handleOpenMessageLinks(INSTAGRAM_ME)}
+              className='mx-3 cursor-pointer'
             />
             <SocialIcon
-              icon={LinkedIn}
-              classes='mx-3'
+              network='linkedin'
               onClick={() => handleOpenMessageLinks(LINKEDIN_ME)}
+              className='mx-3 cursor-pointer'
             />
           </div>
         </div>
@@ -110,31 +113,26 @@ const Home = () => {
           <span className='font-bold my-3'>Experience</span>
           <div className='flex'>
             <SocialIcon
-              icon={LinkedIn}
-              classes='mr-3'
+              network='linkedin'
               onClick={() => handleOpenMessageLinks(LINKEDIN_ME)}
+              className='mr-3 cursor-pointer'
             />
             <SocialIcon
-              icon={Resume}
-              classes='mx-3'
-              onClick={() => handleOpenMessageLinks(RESUME)}
-            />
-            <SocialIcon
-              icon={GitHub}
-              classes='mx-3'
+              network='github'
               onClick={() => handleOpenMessageLinks(GITHUB_ME)}
+              className='mx-3 cursor-pointer'
             />
           </div>
         </div>
         <div className='mb-6 flex flex-col'>
           <span className='font-bold my-3'>Projects</span>
           <div className='flex'>
-            <SocialIcon
+            <SocialIcons
               icon={HouseInRwanda}
               classes='mr-3'
               onClick={() => handleOpenMessageLinks(HOUSEINRWANDA)}
             />
-            <SocialIcon
+            <SocialIcons
               icon={Eshuri}
               classes='mx-3'
               onClick={() => handleOpenMessageLinks(ESHURI)}
