@@ -9,3 +9,4 @@ export const GITHUB_ME = "https://github.com/dushimeemma";
 export const HOUSEINRWANDA = "https://www.houseinrwanda.com";
 export const ESHURI = "https://eshuri.org";
 export const I_18_BASE_URL = "https://ipapi.co/json/";
+export const RRA_ETAX = "https://etax.rra.gov.rw/";

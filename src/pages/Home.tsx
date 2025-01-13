@@ -8,6 +8,7 @@ import Me from "../assets/darkMe.svg";
 import LightMe from "../assets/lightMe.png";
 import HouseInRwanda from "../assets/houseinrwanda.png";
 import Eshuri from "../assets/eshuri.png";
+import RraEtax from "../assets/rra.png";
 
 import SocialIcons from "../components/SocialIcon";
 import ActionButton from "../components/ActionButton";
@@ -21,6 +22,7 @@ import {
   INSTAGRAM_ME,
   LINKEDIN_ME,
   RESUME,
+  RRA_ETAX,
   WHATSAPP_ME,
 } from "../utils/constants";
 
@@ -156,6 +158,11 @@ const Home = () => {
               icon={Eshuri}
               classes="mx-3"
               onClick={() => handleOpenMessageLinks(ESHURI)}
+            />
+            <SocialIcons
+              icon={RraEtax}
+              classes="mx-3"
+              onClick={() => handleOpenMessageLinks(RRA_ETAX)}
             />
           </div>
         </div>
